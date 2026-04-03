@@ -239,8 +239,8 @@ const current = ref(1)
 const pageSize = ref(10)
 
 const radio = ref<number>(1)
-const radioChange = (value: any) => {
-  console.log(value.target.value);
+const radioChange = (value: Event) => {
+  console.log((value.target as HTMLInputElement).value);
 }
 
 const enterFc = () => {
